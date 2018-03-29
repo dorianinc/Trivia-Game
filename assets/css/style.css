@@ -1,7 +1,8 @@
+
 @font-face
 {
-    font-family:  'blacksmith';
-    src: url('../fonts/blacksmith.ttf');
+    font-family:  'confidential';
+    src: url('../fonts/confidential.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -15,7 +16,7 @@ body
 .jumbotron
 {
     color: #FFD700;
-    font-family:  'blacksmith';
+    font-family:  'confidential';
     background: rgba(204, 204, 204, -5);
 }
 
@@ -23,7 +24,7 @@ body
 {
     color: #ffffff;
     margin: 0 auto;
-    height: 357px;
+    height: 340px;
     width: 745px;
     padding: 10px;
     box-sizing: border-box;
@@ -35,9 +36,17 @@ body
     border-width: 7px;
 }
 
+.welcome
+{
+    margin-top: 100px;
+    color: #FFD700;
+    font-family:  'confidential';
+    font-size: xx-large;
+}
+
 .button
 {
-margin-top: 275px;
+margin-top: 135px;
 }
 
 /* MainContent HTML (Contains Questions/Options/Answer/Timer) */
@@ -58,5 +67,11 @@ margin-top: 275px;
     color: #ffd700;
     text-decoration: underline;
     text-decoration-color: #ffffff;
+}
+
+.movie
+{
+    max-height: 280px;
+    width: 710px;
 }
 
