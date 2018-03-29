@@ -21,10 +21,42 @@ body
 
 .mainContent
 {
+    color: #ffffff;
     margin: 0 auto;
-    max-height: 357px;
+    height: 357px;
     width: 745px;
+    padding: 10px;
+    box-sizing: border-box;
     position: relative;
     bottom: 55px;
     left: 7px;
+    border-style: double;
+    border-color: #ffd700;
+    border-width: 7px;
 }
+
+.button
+{
+margin-top: 275px;
+}
+
+/* MainContent HTML (Contains Questions/Options/Answer/Timer) */
+
+.question
+{
+    margin-top: 75px;
+    margin-bottom: 25px;
+}
+
+.options
+{
+    margin-bottom: 15px;
+}
+
+.options:hover
+{
+    color: #ffd700;
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
+}
+
