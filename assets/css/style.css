@@ -1,0 +1,30 @@
+@font-face
+{
+    font-family:  'blacksmith';
+    src: url('../fonts/blacksmith.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+       background-image: url("../images/auditorium.jpg"); 
+       background-attachment: fixed;
+       background-position: center; 
+}
+.jumbotron
+{
+    color: #FFD700;
+    font-family:  'blacksmith';
+    background: rgba(204, 204, 204, -5);
+}
+
+.mainContent
+{
+    margin: 0 auto;
+    max-height: 357px;
+    width: 745px;
+    position: relative;
+    bottom: 55px;
+    left: 7px;
+}
