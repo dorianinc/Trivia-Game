@@ -1,4 +1,4 @@
-
+/* Downloaded font from DaFont.com */
 @font-face
 {
     font-family:  'confidential';
@@ -14,6 +14,8 @@ body
     background-attachment: fixed;
     background-position: center; 
 }
+
+/* Jumbotron containing downloaded font and header */
 .jumbotron
 {
     color: #FFD700;
@@ -21,6 +23,7 @@ body
     background: rgba(204, 204, 204, -5);
 }
 
+/* MainContent will contain all our content(Timer, Images, HTML) */
 .mainContent
 {
     color: #ffffff;
@@ -30,13 +33,14 @@ body
     padding: 10px;
     box-sizing: border-box;
     position: relative;
-    bottom: 55px;
+    bottom: 35px;
     left: 7px;
     border-style: double;
     border-color: #ffd700;
     border-width: 7px;
 }
 
+/* contains Dorian Inc presents which shows up along with start button */
 .welcome
 {
     margin-top: 100px;
@@ -45,24 +49,25 @@ body
     font-size: xx-large;
 }
 
+/* Start Button */
 .button
 {
 margin-top: 40px;
 }
 
 /* MainContent HTML (Contains Questions/Options/Answer/Timer) */
-
 .question
 {
     margin-top: 75px;
     margin-bottom: 25px;
 }
-
-.options
+/* CSS for Options array */
+.options, .timesUp
 {
     margin-bottom: 15px;
 }
 
+/* Hover effect for options */
 .options:hover
 {
     color: #ffd700;
@@ -70,12 +75,15 @@ margin-top: 40px;
     text-decoration-color: #ffffff;
 }
 
+/* Dictates size of images and makes sure they don't exceed maindiv sizing */
 .movie
 {
     max-height: 280px;
     width: 710px;
 }
 
+/* Contains CSS for FinallyTally function gameHTML */
+/* Downloaded font 'Lets see how you did:'*/
 .closer
 {
     margin-top: 100px;
@@ -83,7 +91,7 @@ margin-top: 40px;
     font-family: 'confidential';
     font-size: x-large;
 }
-
+/* makes space between each row of final game results */
 .results
 {
     margin-bottom: 10px;
