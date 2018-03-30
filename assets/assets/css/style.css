@@ -1,0 +1,91 @@
+
+@font-face
+{
+    font-family:  'confidential';
+    src: url('../fonts/confidential.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    max-height: 700px;
+    background-image: url("../images/auditorium.jpg"); 
+    background-attachment: fixed;
+    background-position: center; 
+}
+.jumbotron
+{
+    color: #FFD700;
+    font-family:  'confidential';
+    background: rgba(204, 204, 204, -5);
+}
+
+.mainContent
+{
+    color: #ffffff;
+    margin: 0 auto;
+    height: 340px;
+    width: 745px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 55px;
+    left: 7px;
+    border-style: double;
+    border-color: #ffd700;
+    border-width: 7px;
+}
+
+.welcome
+{
+    margin-top: 100px;
+    color: #FFD700;
+    font-family:  'confidential';
+    font-size: xx-large;
+}
+
+.button
+{
+margin-top: 40px;
+}
+
+/* MainContent HTML (Contains Questions/Options/Answer/Timer) */
+
+.question
+{
+    margin-top: 75px;
+    margin-bottom: 25px;
+}
+
+.options
+{
+    margin-bottom: 15px;
+}
+
+.options:hover
+{
+    color: #ffd700;
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
+}
+
+.movie
+{
+    max-height: 280px;
+    width: 710px;
+}
+
+.closer
+{
+    margin-top: 100px;
+    margin-bottom:20px;
+    font-family: 'confidential';
+    font-size: x-large;
+}
+
+.results
+{
+    margin-bottom: 10px;
+    font-size: large;
+}
