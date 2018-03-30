@@ -1,169 +1,91 @@
-/* ======== Start of Body CSS  ========= */
+
+@font-face
+{
+    font-family:  'confidential';
+    src: url('../fonts/confidential.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body
 {
-    overflow-y: hidden;
-    background-color: #000000;
+    max-height: 700px;
+    background-image: url("../images/auditorium.jpg"); 
+    background-attachment: fixed;
+    background-position: center; 
+}
+.jumbotron
+{
+    color: #FFD700;
+    font-family:  'confidential';
+    background: rgba(204, 204, 204, -5);
+}
+
+.mainContent
+{
     color: #ffffff;
-    width: 1200px;
-    height: 700px;
     margin: 0 auto;
-    padding: 30px;
-    font-family: 'Roboto Slab', serif;
-}
-/* ======== End of Body CSS  ========= */
-
-
-/* ======== Start of all CSS Header Related ========= */
-header
-{
-    width: 40%;
-    margin: auto;
-    border-style: dotted;
-    border-color: coral;
-    border-width: 5px;
-    margin-bottom: 100px;
-}
-
-.title
-{
-    width: 100%;
-    text-align: center;
-    font-size: xx-large;
-    font-family: 'IBM Plex Mono', monospace;
-    margin-bottom: 5px;
-}
-
-h2
-{
-    text-decoration: line-through;
-}
-/* ======== End of all CSS Header Related ========= */
-
-
-/* ======== Start of Questions CSS ========= */
-
-.questions
-{
-    width: 100%;
-    text-align: center;
-    font-size: x-large;
-}
-
-/* ======== End of Questions CSS ========= */
-
-
-/* ====== Start of Border effects ====== */
-
-.border
-{
+    height: 340px;
+    width: 745px;
+    padding: 10px;
     box-sizing: border-box;
     position: relative;
-    display: inline-block;
-    min-width: 275px;
-    height: 80px;
-    margin: 40px auto;
-    color: #ffffff;
-    text-align: center;
-    line-height: 80px;
-    font-size: medium;
+    bottom: 55px;
+    left: 7px;
+    border-style: double;
+    border-color: #ffd700;
+    border-width: 7px;
 }
 
-.border:before /* Transforms top part of  border to form a hexagon */
+.welcome
 {
-    transform: perspective(15px) rotateX(3deg);
+    margin-top: 100px;
+    color: #FFD700;
+    font-family:  'confidential';
+    font-size: xx-large;
 }
 
-.border:after /* Transforms bottom part of  border to form a hexagon */
+.button
 {
-    top: 40px;
-    transform: perspective(15px) rotateX(-3deg);
+margin-top: 40px;
 }
 
-.border:before, .border:after
+/* MainContent HTML (Contains Questions/Options/Answer/Timer) */
+
+.question
 {
-    position: absolute;
-    content:'';
-    width: 245px;
-    left: 10px;
-    height: 34px;
-    z-index: -1;
+    margin-top: 75px;
+    margin-bottom: 25px;
 }
 
-.border:before, .border:after /* Determines color and thickness of border */
+.options
 {
-    border: 4px solid #6495ED;
+    margin-bottom: 15px;
 }
 
-.border:before, .border:before /* To prevent the border-line showing up in the middle of the shape */
+.options:hover
 {
-    border-bottom: none;
+    color: #ffd700;
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
 }
 
-.border:after, .border:after /* To prevent the border-line showing up in the middle of the shape */
+.movie
 {
-    border-top: none;
+    max-height: 280px;
+    width: 710px;
 }
 
-.border:hover:before, .border:hover:after /* Adds Hover Effect */
+.closer
 {
-    background: #FFD700;
-}
-
-/* ====== End of Border effects for Answers ====== */
-
-
-.row1
-{
-    margin-left: 310px;
-    margin-right: 310px;
-}
-
-#a, #b
-{
-    float: left;
-    margin-bottom: 10px;
-}
-
-#b, #d
-{
-    float: right;
-    margin-bottom: 10px;
-}
-
-.row2
-{
-    clear: both;
-    margin-left: 310px;
-    margin-right: 310px;
-}
-
-#timer
-{
-    width: 100%;
-    text-align: center;
+    margin-top: 100px;
+    margin-bottom:20px;
+    font-family: 'confidential';
     font-size: x-large;
-    font-family: 'IBM Plex Mono', monospace;
-    margin-top: 60px;
-    margin-bottom: 70px;
-    position: absolute;
-    z-index: -2;
-    bottom: 185px;
-    left: 0px;
 }
 
-#spinner
+.results
 {
-    width: 5%;
-    height: 10%;
-    text-align: center;
-    font-size: x-large;
-    font-family: 'IBM Plex Mono', monospace;
-    margin-top: 60px;
-    margin-bottom: 70px;
-    position: absolute;
-    z-index: -3;
-    bottom: 160px;
-    left: 730px; 
+    margin-bottom: 10px;
+    font-size: large;
 }
-
-
